@@ -1,0 +1,25 @@
+{
+  "name": "milemajs",
+  "version": "1.0.0",
+  "description": "Mielma with JS",
+  "main": "primeralg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santiag0Herrera/JavaSr.git"
+  },
+  "author": "Santiago Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Santiag0Herrera/JavaSr/issues"
+  },
+  "homepage": "https://github.com/Santiag0Herrera/JavaSr#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

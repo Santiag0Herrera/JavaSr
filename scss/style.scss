@@ -1,0 +1,870 @@
+****************General********************
+
+html{
+    background-color: #efe9ee;
+
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+}
+
+.nav-item{
+    h1 {
+        font-size: 30px;
+    }
+}
+.Titulo{
+    font-family: "Lobster";
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(75, 42, 20);
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+
+h2 {
+    font-family: "Lobster";
+    font-size: 35px;
+    text-align: justify;
+    color: rgb(75, 42, 20);
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+p{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: "Lobster";
+    font-size: 25px;
+    color:rgb(75, 42, 20);
+    margin: 0px 10px 0px 10px;
+}
+
+h4{
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+}
+
+a{
+    color:rgb(75, 42, 20); 
+    text-decoration-line: none;
+    font-size: 22.5px;
+}
+
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+}
+
+.pestaña{
+    color: rgb(254, 214, 227);
+    border-width: 3px;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.animate__animated{
+    font-size: 50px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+    background-color: rgba(75, 42, 20, 0.383);
+    align-content: space-around;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+
+    .redes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        h4{
+            margin: 0px 30px 0px 30px;
+        }
+
+        h2{
+            display: block;
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 0px 0px 25px 0px;
+            justify-content: center;
+        }
+    }
+}
+
+.menu ul{
+    font-family: "Lobster";
+    text-align: right;
+}
+
+/******************Index*********************/
+
+.Titulo{
+    margin-top:30px;
+}
+
+.chicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 0px;
+    width: 99vw;
+    height:fit-content;
+
+    h3{
+        font-size: 25px;
+    }
+
+    li{
+        border-radius: 10px;
+        margin: 10px;
+        width: 25;
+        padding: 0px;
+    }
+
+    a{
+        float: right;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    img{
+        width: 200px;
+        border-radius: 10px;
+    }
+
+
+    input{
+        height: 30px;
+        width: 100%;
+        border-radius: 20px;
+        border-color: rgb(117, 74, 45);
+        border-style: none;
+        background-color: rgba(75, 42, 20, 0.602);
+        color:rgb(172, 141, 115)
+    }
+}
+
+#formularioCreacion{
+    background-color:#8b857b;
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    ::placeholder{
+        color: rgb(167, 167, 167);
+    }
+    :hover{
+        background-color: #959086;
+        ::placeholder{
+            color: rgb(7, 4, 4);
+        }
+    }
+    input{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        border-color: rgb(117, 74, 45);
+        border-style: none;
+        background-color: rgb(122, 111, 97);
+        color:white;
+    }
+    textarea{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 100px;
+        width: 100%;
+        border-radius: 5px;
+        border-color: rgb(117, 74, 45);
+        border-style: none;
+        background-color: rgb(122, 111, 97);
+        color:white;
+    }
+}
+
+#crearArticulo{
+    color: white;
+    background-color: #49392f;
+    margin: 5px;
+    height: 40px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin:10px;
+}
+
+.articulos{
+    height:fit-content;
+}
+.card{
+    height:auto;
+}
+
+#btn-carrito-delete{
+    margin: 5px 0px 5px 0px;
+}
+
+.card-img-top{
+    margin: 10px 0px 0px 0px;
+}
+
+.Marina{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.287);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+
+    img{
+        width: 600px;
+        height: 400px;
+        margin: 5px;
+        border-radius: 10px;
+
+        :hover{
+            transform: scale(1.09,1.09);
+        }
+    }
+
+    p{
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.fotoInicial{
+    height: 60vh;
+    background-image:url(https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-position:center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.609);
+
+    h2{
+        color:rgb(224, 224, 224);
+    }
+
+    input{
+        width: 10vw;
+        height: 5vh;
+        font-size: 22px;
+        border-radius: 10px;
+        border-color: none;
+        border-style: none;
+        background-color: rgb(185,157,154);
+        font-family: "Amiri" ;
+    }
+}
+
+/****************Catalogo**************/
+
+.busqueda{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+
+    input{
+        height: 30px;
+    }
+}
+
+.barraBusqueda{
+    width: 30vw;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(149, 114, 85, 0.5);
+    color: white;
+    padding: 5px;
+    margin:20px 2px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.botonBuscar{
+    border-style: none;
+    border-radius: 10px;
+    background-color:rgb(149, 114, 85);
+    color: white;
+    margin:20px 2px;
+}
+
+.catalogoArticulos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    h3{
+    font-size: 25px;
+    }
+
+    li{
+        background-color: rgba(75, 42, 20, 0.383);
+        border-color: rgb(75, 42, 20);;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    a{
+        float: right;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    img{
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    input{
+        height: 40px;
+        border-radius: 20px;
+        border-color: rgb(117, 74, 45);
+        border-style: none;
+        background-color: rgba(75, 42, 20, 0.602);
+        color:rgb(172, 141, 115);
+    }
+}
+
+.paraTi{
+    grid-area: "parati";
+}
+
+.ultimo{
+    grid-area: "ultimo";
+}
+
+.introCatalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.609);
+
+    h2{
+        font-size: 60px;
+        color:rgb(224, 224, 224);
+    }
+
+    input{
+        height: 5vh;
+        font-size: 22px;
+        border-radius: 10px;
+        border-color: none;
+        border-style: none;
+        background-color: rgb(185,157,154);
+        font-family: "Amiri" ;
+    }
+
+    .botonBuscar{
+        border-style: none;
+        border-radius: 10px;
+        background-color:rgb(149, 114, 85);
+        color: white;
+        margin:20px 2px;
+    }
+}
+
+
+/***************Carrito***************/
+
+.BOTON {
+    display: flex;
+    justify-content: end;
+    :hover{
+        background-color:rgb(149, 134, 121);
+        color: rgb(105, 97, 97);
+    }
+}
+
+.botonComprar{
+    padding: 10px;
+    margin: 30px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color:rgb(149, 114, 85);
+    color: white;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: repeat(5,245px);
+    grid-template-rows: repeat(2,340px);
+    justify-content: center;
+    padding: 10px;
+
+    li{
+        margin: 8px;
+        padding: 10px;
+        background-color: rgba(75, 42, 20, 0.383);
+        border-color: rgb(75, 42, 20);
+        border-radius: 10px;
+        align-content: center;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    img{
+        height: 209px;
+        border-radius: 10px;
+    }
+}
+
+/**************NOSOTROS****************/
+/***********SASS II DESAFIO************/
+$ancho:90vw;
+$alto:90vh;
+$Fondo: url(https://st4.depositphotos.com/9563468/i/600/depositphotos_379827316-stock-photo-soft-pink-background-rose-pattern.jpg);
+$bordes:10px;
+$padding:15px;
+$margin:15px;
+$pagina:tradicional;         /*modos:tradicional ; halloween ; navidad */
+$fondoNavidad:url(https://media.istockphoto.com/vectors/christmas-pattern-vector-id1061438608);
+$fondoHalloween:url(https://previews.123rf.com/images/morys/morys1309/morys130900017/23211016-textura-perfecta-de-halloween-ilustraci%C3%B3n-del-vector-.jpg);
+
+.quienesSomos{
+    background-image: $Fondo;
+    width: $ancho;
+    border-radius: $bordes;
+    padding: $padding;
+    margin: $margin 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center
+}
+
+.porque{
+    background-image: $Fondo;
+    width: $ancho;
+    border-radius: $bordes;
+    padding: $padding;
+    margin: $margin 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.nosotros{
+    width: $ancho;
+    border-radius: $bordes;
+    padding: $padding;
+    margin: $margin 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contenedorMapa{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.mapa{
+    width: $ancho+8.9;
+    height: $alto;
+}
+
+main{
+    @if $pagina==tradicional{
+        background-color: none;
+    }
+    @else if $pagina==navidad{
+        background-image: $fondoNavidad;
+    }
+    @else if $pagina==halloween{
+        background-image: $fondoHalloween;
+    }
+}
+
+/***********SASS II DESAFIO************/
+.NOSOTROS{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+/***********ANIMACIONES***************/
+
+input:hover{
+    background-color: rgb(190, 181, 175) ;
+    color: black;
+}
+
+.marina {
+    img :hover{
+        transform: scale(1.5,1.5);
+    }
+} 
+
+/*POST BOOSTRAP*/
+
+nav{
+    font-family: "Lobster";
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    padding: 0px;
+}
+
+.container-fluid{
+    padding: 0px 12px;
+position: relative;
+    z-index: 1000;
+}
+
+.navbar-light{
+    padding: 0px;
+}
+
+
+.btn-lg {
+    border-radius: 10px;
+    border-color: none;
+    border-style: none;
+    background-color: rgb(185,157,154);
+    padding: 0px;
+
+    p:hover{
+        color: white;
+    }
+}
+
+.btn-primary{
+    padding: 0px;
+}
+
+.card{
+    border-style: none;
+    .mb-3{
+        width: 100vw;
+        align-items: center;
+        margin: 0px;
+    }
+}
+
+.row{
+    justify-content: center;
+    width: 100vw;
+
+    .g-0{
+        width: 100vw;
+    }
+}
+
+.col-md-4{
+    width: 50vw;
+}
+
+.col-md-8{
+    width: 50vw;
+}
+
+.form-inline {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    margin: 10px;
+
+    .form-control{
+        width: 30vw;
+    }
+
+}
+
+/* *************RESPOSIVE CSS**************/
+
+@media only screen and (min-width: 1px)
+{
+    .nav{
+        width: 100vw;
+    }
+
+    .img-fluid {
+        width: 50vw;
+    }
+
+    .col-md-8{
+        width: 50vw;
+    }
+
+    .animate__animated{
+        font-size: 30px;
+    }
+
+    .btn-lg{
+        width:20%;
+        font-size: 20%;
+        padding: 0px;
+    }
+
+    button{
+        height: 30px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    button p{
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .chicos .card{
+        width: 100px;
+        height: auto;
+        margin:20px;
+    }
+
+    .card img{
+        width: 100px;
+        border-radius: 3px;
+    }
+
+    .card-body{
+        padding: 3px;
+        height: 60px;
+    }
+
+    .card h5{
+        font-size: 10px;
+    }
+
+    .card p {
+        font-size: 5px;
+    }
+
+    .card a{
+        width: 100px;
+        height: 10px;
+        font-size: 5px;
+    }
+
+    .card-text{
+        padding-bottom: 2px;
+        margin: 0px;
+    }
+
+    .bi-instagram{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .bi-facebook{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .bi-whatsapp{
+        width: 20px;
+        height: 20px;
+        margin:10px;
+    }
+
+    .bi-envelope{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .nav{
+        width: 100vw;
+    }
+
+    .animate__animated{
+        font-size: 45px;
+    }
+
+    .btn-lg{
+        width:20%;
+        font-size: 20%;
+    }
+
+    button{
+        height: 45px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    button p{
+        font-size: 22.5px;
+        margin: 0px;
+    }
+
+    h2{
+        font-size: 37.5px;
+    }
+
+    .chicos .card{
+        width: 150px;
+        height: auto;
+    }
+
+    .card img{
+        width: 150px;
+        border-radius: 4.5px;
+    }
+
+    .card-body{
+        padding: 3px;
+        height: 75px;
+    }
+
+    .card h5{
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .card a{
+        width: 150px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .card-text{
+        padding-bottom: 2px;
+        margin: 0px;
+    }
+
+    .card .mb-3{
+        width: 100vw;
+    }
+
+    .marinaImg{
+        width: 50;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav{
+        width: 100vw;
+    }
+
+    .animate__animated{
+        font-size: 67.5px;
+    }
+
+    .btn-lg{
+        width:20%;
+        font-size: 20%;
+    }
+
+    button{
+        height: 70px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    button p{
+        font-size: 33.75px;
+        margin: 0px;
+    }
+
+    h2{
+        font-size: 56.25px;
+    }
+
+    .chicos .card{
+        width: 225px;
+        height: auto;
+    }
+
+    .card img{
+        width: 225px;
+        border-radius: 6.75px;
+    }
+
+    .card-body{
+        padding: 3px;
+        height: 112.5px;
+    }
+
+    .card h5{
+        font-size: 22.5px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .card a{
+        width: 225px;
+        height: 22.5px;
+        font-size: 15px;
+    }
+
+    .card-text{
+        padding-bottom: 2px;
+        margin: 0px;
+    }
+}
+
+
+/*********************PARA LA TERMINAL*****************
+/*
+Para cambiar la direccion de terminal: "cd C:\Users\user\OneDrive\Escritorio\varios\PROGRAMACION\JavaSr"
+Para ejecutar el scss: "npm run watch-css"
+/****************************************************** */

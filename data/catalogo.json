@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "nombre":"Articulo1",
+        "descripcion":"Este es el articulo 1",
+        "precio":"1234",
+        "imagen":"/Imagenes/Articulo1.jpg"
+    
+    },
+
+    {
+        "id": "2",
+        "nombre":"Articulo2",
+        "descripcion":"Este es el articulo 2",
+        "precio":"1234",
+        "imagen":"/Imagenes/Articulo2.jpg"
+    },
+
+    {
+        "id": "3",
+        "nombre":"Articulo3",
+        "descripcion":"Este es el articulo 3",
+        "precio":"1234",
+        "imagen":"/Imagenes/Articulo3.jpg"
+    },
+
+    {
+        "id": "4",
+        "nombre":"Articulo4",
+        "descripcion":"Este es el articulo 4",
+        "precio":"1234",
+        "imagen":"/Imagenes/Articulo4.jpg"
+    },
+
+    {
+        "id": "5",
+        "nombre":"Articulo5",
+        "descripcion":"Este es el articulo 5",
+        "precio":"1234",
+        "imagen":"/Imagenes/Articulo5.jpg"
+    },
+
+    {
+        "id": "6",
+        "nombre":"Articulo6",
+        "descripcion":"Este es el articulo 6",
+        "precio":"1234",
+        "imagen":"/Imagenes/Articulo6.jpg"
+    }
+]
