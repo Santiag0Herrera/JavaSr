@@ -1,12 +1,11 @@
-
-//VARIABLES
 let carrito = [];
 let total = 0;
 
-//FUNCIONES
+console.log("mi"+carrito);
 const addCarrito = (indiceDelArrayProducto) => {
+    console.log(indiceDelArrayProducto);
     const indiceEncontrado = carrito.findIndex((elemento) => {
-        return elemento.id === stock[indiceDelArrayProducto].id;
+        console.log(elemento.id === stock[indiceDelArrayProducto].id);
     });
     if (indiceEncontrado === -1) {
         let productoAgregar = stock[indiceDelArrayProducto];
@@ -19,46 +18,46 @@ const addCarrito = (indiceDelArrayProducto) => {
         leerCarrito();
     }
 };
-    let carritoContainer = document.getElementById("carritoSlidebar");
 
-    const leerCarrito = () => {
-    carritoContainer.innerHTML = "";
+function leerCarrito (){
     if (carrito.length > 0) {
         carrito.forEach((producto, indice) => {
             total = total + (producto.precio * producto.cantidad);
-            let carrito = document.createElement("div");
-            carrito.className = "producto-carrito";
-            carrito.innerHTML = 
-                `<li class="articulos">
-                    <div class="card">
-                        <img src="${producto.imagen}"alt="Artiuclos de decoracion minimalistas vitage" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" id="title">${producto.nombre}</h5>
-                            <p class="card-text" id="textDesc">${producto.descripcion}.</p>
-                            <h6 class="card-text" id="textCantidad">Cantidad: ${producto.cantidad}</h6>
-                            <h6 class="card-text" id="textPrecio">$${producto.precio}</h6>
-                            <a class="btn btn-primary"  id="remove-product" onClick="removeProduct(${indice})">Eliminar producto</a>
+            $("#carritoSlidebar").append(`
+            <div class="producto-carrito">
+                    <li class="articulos">
+                        <div class="card">
+                            <img src="${producto.imagen}"alt="Artiuclos de decoracion minimalistas vitage" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="title">${producto.nombre}</h5>
+                                <p class="card-text" id="textDesc">${producto.descripcion}.</p>
+                                <h6 class="card-text" id="textCantidad">Cantidad: ${producto.cantidad}</h6>
+                                <h6 class="card-text" id="textPrecio">$${producto.precio}</h6>
+                                <button class="btn btn-primary"  id="btn-carrito-add" onClick="removeProduct(${indice})">Quitar</button>
+                            </div>
                         </div>
-                    </div>
-                </li>`;
-            carritoContainer.appendChild(carrito);
+                    </li>
+                </div>
+            `);
         });
-        const totalContainer = document.createElement("div");
-        totalContainer.className = "total-carrito";
-        totalContainer.innerHTML = `
-            <div class= "total"> TOTAL $ ${total}</div>
-            <a class= "btn btn-primary finalizar" id="finalizar" onClick="finalizarCompra()"> FINALIZAR COMPRA </a>`;
-        carritoContainer.appendChild(totalContainer);
+        $("#totalSeccion").append(`
+            <div class="total-carrito">
+                <div class= "total" id="ttal"> TOTAL $ ${total}</div>
+                <a class= "btn btn-primary finalizar" id="finalizar"onClick="finalizarCompra()"> FINALIZAR COMPRA </a>
+            </div>`);
+    }else{
+        $("#carritoSlidebar").append(`
+        <h5 style="color:grey">UPS! No hay productos agregados a tu carrito.</h5>
+        `);
     }
 }
-
-const removeProduct = (indice) => {
+function removeProduct (indice) {
     carrito.splice(indice, 1);
     actualizarStorage(carrito);
     leerCarrito();
 };
 
-const actualizarStorage = (carrito) => {
+function actualizarStorage (carrito) {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
@@ -67,13 +66,11 @@ if (localStorage.getItem("carrito")) {
     leerCarrito();
 }
 
-const finalizarCompra = () => {
-    const total = document.getElementsByClassName("total")[0].innerHTML;
-    carritoContainer.innerHTML = "";
-    const compraFinalizada = `<div class="compra-finalizada"><p class="compra-parrafo"> YA CASI ES TUYA LA COMPRA, EL   ${total} </p></div>
+function finalizarCompra () {
+    const total = $("#ttal")[0];
+    $("#totalSeccion").append(`<div class="compra-finalizada"><p class="compra-parrafo"> YA CASI ES TUYA LA COMPRA, EL   ${total} </p></div>
     <div class="datos-cliente">
     <p class="datos-parrafo"> Complete el formulario con sus datos para coordinar la entrega</p>
     <a class= "btn  formulario" id="formulario" onClick="dibujarFormu()"> FORMULARIO </a>
-    </div>`;
-    carritoContainer.innerHTML = compraFinalizada;
+    </div>`);
 };

@@ -50,6 +50,12 @@ h4{
     font-size: 25px;
 }
 
+h5{
+    margin: 20px;
+    font-family: "Rubik", serif;
+    font-size: 15px;
+}
+
 a{
     color:rgb(75, 42, 20); 
     text-decoration-line: none;
@@ -58,8 +64,46 @@ a{
 
 header{
     position: sticky;
+    top: 0;
     z-index: 1000;
-    top: 0px;
+
+}
+
+#carritoSlidebar{
+    width: fit-content;
+}
+
+#totalSeccion{
+    width: 90vw;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+        padding: 5px;
+    }
+}
+
+#top{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#topInv{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#topAdm{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .pestaña{
@@ -234,9 +278,6 @@ footer {
     height:auto;
 }
 
-#btn-carrito-delete{
-    margin: 5px 0px 5px 0px;
-}
 
 .card-img-top{
     margin: 10px 0px 0px 0px;
@@ -297,6 +338,116 @@ footer {
         font-family: "Amiri" ;
     }
 }
+
+#formularioInicio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#fondoInicio{
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorFormInicio{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitButton{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonInicio{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(149, 114, 85, 0.5);
+    width: 40vw;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.botonInicio:hover{
+    background-color: rgba(199, 150, 110, 0.5);
+    color: white;
+}
+
+#append{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    #datosVerificados{
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        h4{
+            color: rgb(96, 167, 78);
+            font-size:20px;
+        }
+        .botonInicio{
+            display: flex;
+            justify-content: center;
+            background-color: rgba(100, 149, 85, 0.5);
+            width: 45vw;
+            border-radius: 10px;
+            color: rgb(59, 59, 59);
+        }
+        .botonInicio:hover{
+            background-color:rgba(111, 187, 87, 0.5);
+            color: white;
+        }
+        
+    }
+    #datosVerificadosIncorrectos{
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        h4{
+            color: rgb(192, 50, 50);
+            font-size:20px;
+        }
+        .botonInicioIncorrecto{
+            display: flex;
+            justify-content: center;
+            background-color: rgba(149, 85, 85, 0.5);
+            width: 45vw;
+            border-radius: 10px;
+            color: rgb(63, 16, 16);
+        }
+        .botonInicioIncorrecto:hover{
+            background-color:rgba(187, 87, 87, 0.5);
+            color: white;
+        }
+    }
+}
+
 
 /****************Catalogo**************/
 
@@ -724,7 +875,19 @@ position: relative;
         height: 20px;
         margin: 10px;
     }
+
+    #btn-carrito-add{
+        width: 100px;
+        height: 15px;
+        font-size: 10px;
+        float: right;
+        color: #fff;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .nav{
@@ -797,6 +960,7 @@ position: relative;
         width: 50;
     }
 }
+
 
 @media only screen and (min-width: 1024px) {
     .nav{
